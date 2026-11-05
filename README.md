@@ -28,7 +28,13 @@ Our primary metric is PR-AUC (average precision), with ROC-AUC used for comparis
 
 The dataset is publicly available through the UCI Machine Learning Repository.
 
-The data pipeline is in `src/01_data_pipeline.ipynb`. Processed train, validation, and test matrices are in `data/processed/`. See `data/README.md` for the cleaning decisions, the split, and how to load the arrays. The majority-class baseline scores 0.887 accuracy and 0.113 validation PR-AUC.
+Run the notebooks from the repository root or `src/` using dependencies listed in `requirements.txt`.
+
+1. `src/01_data_pipeline.ipynb` prepares the random train, validation, and test matrices in `data/processed/`. The tracked arrays are already available, so running this notebook is optional; it overwrites the processed files.
+2. `src/02_baseline.ipynb` evaluates the majority-class baseline.
+3. `src/03_logistic_regression.ipynb` tunes logistic regression on validation and displays a consolidated table alongside the majority baseline, plus validation errors.
+
+See `data/README.md` for the cleaning decisions and split. The test set was already inspected in earlier versions of the notebooks and must not be used to select model settings.
 
 ## Team Responsibilities
 

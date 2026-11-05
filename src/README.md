@@ -1,1 +1,1 @@
-	Code for data preprocessing, train/validation/test splitting, and baseline models.
+Run `01_data_pipeline.ipynb` to prepare the random split, `02_baseline.ipynb` for the majority baseline, and `03_logistic_regression.ipynb` for logistic regression and the comparison table. The modeling notebooks share evaluation helpers in `model_utils.py`.
