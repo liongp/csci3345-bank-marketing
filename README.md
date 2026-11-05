@@ -28,7 +28,7 @@ Our primary metric is PR-AUC (average precision), with ROC-AUC used for comparis
 
 The dataset is publicly available through the UCI Machine Learning Repository.
 
-Installation instructions, dependencies, and commands to reproduce the baseline results will be added once the implementation is finalized.
+The data pipeline is in `src/01_data_pipeline.ipynb`. Processed train, validation, and test matrices are in `data/processed/`. See `data/README.md` for the cleaning decisions, the split, and how to load the arrays. The majority-class baseline scores 0.887 accuracy and 0.113 validation PR-AUC.
 
 ## Team Responsibilities
 
